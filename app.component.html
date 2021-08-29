@@ -1,0 +1,16 @@
+
+<div>============ User App ===============</div>
+<br><br>
+<!-- ============================ -->
+<div>
+<input type="text" [(ngModel)]="userName"  placeholder="your Name" >
+<button style="color: blue;" (click)="addData()">Add Data</button>
+
+<ul>
+  <li *ngFor="let todo of todos; index as i">
+    {{i}} : {{todo}}
+    <button style="color: red;" (click)="deleteData(todo)">Delete</button>
+  </li>
+</ul>
+
+</div>
